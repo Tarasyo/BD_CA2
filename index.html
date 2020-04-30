@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Taras Boreyko | WebProgramist</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700italic,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
@@ -12,53 +13,55 @@
   <body>
     <header>
        <a href="index.html" id="logo">
-         <h1>Taras Boreyko</h1>
-         <h2>WebProgramist</h2>
+         <h1>Numbers facts</h1>
        </a>
        <nav>
          <ul>
-           <li><a href="index.html" class="selected">Portfolio</a></li>
-           <li><a href="about.html">About</a></li>
-           <li><a href="contact.html">Contact</a></li>
+           <li><a href="index.html" class="selected">Main</a></li>
          </ul>
       </nav>
     </header>
     <div id="wrapper">
-      <section>
-        <ul id="gallery">
-          <li>
-            <a href="img/numbers-01.jpg">
-              <img src="img/numbers-01.jpg" alt="">
-              <p>Experimentation with color and texture.</p>
-            </a>
-          </li> 
-           <li>
-            <a href="img/numbers-02.jpg">
-              <img src="img/numbers-02.jpg" alt="">
-              <p>Experimentation with color and texture.</p>
-            </a>
-          </li>  <li>
-            <a href="img/numbers-06.jpg">
-              <img src="img/numbers-06.jpg" alt="">
-              <p>Experimentation with color and texture.</p>
-            </a>
-          </li>  <li>
-            <a href="img/numbers-09.jpg">
-              <img src="img/numbers-09.jpg" alt="">
-              <p>Experimentation with color and texture.</p>
-            </a>
-          </li>  <li>
-            <a href="img/numbers-12.jpg">
-              <img src="img/numbers-12.jpg" alt="">
-              <p>Experimentation with color and texture.</p>
-            </a>
-          </li> 
-        </ul>
-      </section>
+          <button id="buttonDateF" class="button"><b>Get Date Fact</b></button>
+          <button id="buttonMathF" class="button"><b>Get Math Fact</b></button>
+          <button id="buttonTriviaF" class="button"><b>Get Trivia Fact</b></button>
+          <button id="buttonYearF" class="button"><b>Get Year Fact</b></button>
+          <div id="dateFact">
+            <form id="one">
+              <h3>Input Date</h3>
+              day : <input type="number" name="day" id="day"><br>
+              month: <input type="number" name="month" id="month"><br>
+              <input class="button" type="button" onclick="dateF()" value="Submit" />
+            </form>
+          </div>
+       <div id="mathFact"> 
+        <form id="two">
+          <h3>Input Some number</h3>
+          <input type="number" name="numberS" id="numberS"><br>
+          <input class="button" type="button" onclick="numberF()" value="Submit" />
+        </form>
+       </div>
+       <div id="triviaFact">
+         <form id="t">
+        <h3>Input Some number</h3>
+        <input type="number" name="trivia" id="trivia"><br>
+        <input class="button" type="button" onclick="triviaF()" value="Submit" />
+      </form>
+    </div>
+       <div id="yearFact">
+         <form id="f">
+        <h3>Input Year</h3>
+        <input type="number" name="year" id="year"><br>
+        <input class="button" type="button" onclick="yearF()" value="Submit" />
+      </form>
+    </div>
+       <div id="outPut"></div>
       <footer>
+        <script src="script/index.js"></script> 
+        <script src="script/utilitis.js"></script>
         <a href="https://twitter.com/Tarasyo"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
         <a href="https://www.facebook.com/taras.boreyko"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-        <p>&copy; 2015 Taras Boreyko.</p>
+        <p>&copy; 2020 Taras Boreyko.</p>
       </footer>
     </div>
   </body>
