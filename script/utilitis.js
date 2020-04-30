@@ -1,4 +1,4 @@
-//function to get diferent div's on clik of the button
+//function to get different div's on clik of the button
 $(document).ready(function() {
     // hide the forms when page is ready
     $('#dateFact').hide();
